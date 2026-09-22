@@ -17,7 +17,7 @@ network: defaults
 # Motor y modelo compatible
 engine:
   id: copilot
-  model: gpt-4o
+  model: o3-mini
 
 # Outputs - what APIs and tools can the AI use?
 safe-outputs:
