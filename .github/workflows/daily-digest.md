@@ -1,11 +1,10 @@
 ---
 name: Daily Digest
-strict: false
 on:
   schedule: daily on weekdays
   workflow_dispatch:
 permissions:
-  issues: write
+  issues: read
   contents: read
 safe-outputs:
   create-issue:
