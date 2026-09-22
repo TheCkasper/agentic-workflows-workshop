@@ -1,0 +1,723 @@
+{
+  "cache_source": "full",
+  "overview": {
+    "run_id": 35681339763,
+    "workflow_name": "daily-digest",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-09-22T02:56:55Z",
+    "started_at": "2026-09-22T02:56:55Z",
+    "updated_at": "2026-09-22T02:58:02Z",
+    "duration": "1.1m",
+    "event": "workflow_dispatch",
+    "branch": "main",
+    "url": "https://github.com/TheCkasper/agentic-workflows-workshop/actions/runs/35681339763",
+    "logs_path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763"
+  },
+  "comparison": {
+    "baseline_found": false
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "lean",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "metrics": {
+    "working_set": {
+      "measurement_state": "unavailable",
+      "cumulative_input_tokens": 0,
+      "peak_input_tokens": 0,
+      "rebuild_excess_tokens": 0,
+      "invocations": 0
+    },
+    "action_minutes": 2,
+    "error_count": 1,
+    "warning_count": 0
+  },
+  "key_findings": [
+    {
+      "category": "error",
+      "severity": "critical",
+      "title": "Workflow Failed",
+      "description": "Workflow 'daily-digest' failed with 3 error(s): ##[error]Process completed with exit code 1.",
+      "impact": "Workflow did not complete successfully and may need intervention"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "Review error logs to identify root cause of failure",
+      "reason": "Understanding failure causes helps prevent recurrence",
+      "example": "Check the errors field for specific error messages, or inspect the log files in logs_path"
+    }
+  ],
+  "observability_insights": [
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Directed execution path",
+      "summary": "The run remained relatively linear with 0 turns and 0 tool types.",
+      "evidence": "turns=0 tool_types=0"
+    },
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Read-only posture observed",
+      "summary": "The workflow stayed in an analysis posture and did not emit any GitHub write actions.",
+      "evidence": "created_items=0 safe_items=0"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Log template patterns mined",
+      "summary": "Analysis identified 2 distinct event templates across 6 pipeline stages from 1 events.",
+      "evidence": "finish=1 plan=1"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Agent stage sequence",
+      "summary": "The observed pipeline stage sequence for this run.",
+      "evidence": "finish"
+    }
+  ],
+  "performance_metrics": {},
+  "engine_config": {
+    "engine_id": "copilot",
+    "engine_name": "GitHub Copilot CLI",
+    "model": "auto",
+    "version": "1.0.80",
+    "cli_version": "v0.88.8",
+    "firewall_version": "v0.28.14",
+    "trigger_event": "workflow_dispatch",
+    "repository": "TheCkasper/agentic-workflows-workshop"
+  },
+  "session_analysis": {
+    "wall_time": "1.1m",
+    "timeout_detected": false
+  },
+  "jobs": [
+    {
+      "name": "activation",
+      "status": "completed",
+      "conclusion": "failure",
+      "duration": "17.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T02:57:10Z",
+          "completed_at": "2026-09-22T02:57:14Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T02:57:14Z",
+          "completed_at": "2026-09-22T02:57:21Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T02:57:21Z",
+          "completed_at": "2026-09-22T02:57:21Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T02:57:21Z",
+          "completed_at": "2026-09-22T02:57:21Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T02:57:21Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache (artifact fallback)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Validate COPILOT_GITHUB_TOKEN secret",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 8,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 14,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 15,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 16,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 17,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 20,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:22Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-09-22T02:57:22Z",
+          "completed_at": "2026-09-22T02:57:23Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42,
+          "started_at": "2026-09-22T02:57:23Z",
+          "completed_at": "2026-09-22T02:57:23Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-09-22T02:57:23Z",
+          "completed_at": "2026-09-22T02:57:23Z"
+        }
+      ]
+    },
+    {
+      "name": "agent",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "detection",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "conclusion",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "22.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T02:57:41Z",
+          "completed_at": "2026-09-22T02:57:46Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T02:57:46Z",
+          "completed_at": "2026-09-22T02:57:48Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T02:57:48Z",
+          "completed_at": "2026-09-22T02:57:49Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T02:57:49Z",
+          "completed_at": "2026-09-22T02:57:49Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T02:57:49Z",
+          "completed_at": "2026-09-22T02:57:50Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T02:57:50Z",
+          "completed_at": "2026-09-22T02:57:50Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T02:57:50Z",
+          "completed_at": "2026-09-22T02:57:50Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T02:57:50Z",
+          "completed_at": "2026-09-22T02:57:52Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T02:57:52Z",
+          "completed_at": "2026-09-22T02:57:52Z"
+        },
+        {
+          "name": "Write daily AIC usage cache entry",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T02:57:52Z",
+          "completed_at": "2026-09-22T02:57:53Z"
+        },
+        {
+          "name": "Save daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T02:57:53Z",
+          "completed_at": "2026-09-22T02:57:54Z"
+        },
+        {
+          "name": "Upload daily AIC usage cache artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T02:57:54Z",
+          "completed_at": "2026-09-22T02:57:55Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T02:57:55Z",
+          "completed_at": "2026-09-22T02:57:55Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T02:57:55Z",
+          "completed_at": "2026-09-22T02:57:55Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T02:57:55Z",
+          "completed_at": "2026-09-22T02:57:55Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T02:57:55Z",
+          "completed_at": "2026-09-22T02:57:56Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-09-22T02:57:56Z",
+          "completed_at": "2026-09-22T02:57:58Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-09-22T02:57:58Z",
+          "completed_at": "2026-09-22T02:57:59Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-09-22T02:57:59Z",
+          "completed_at": "2026-09-22T02:57:59Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-09-22T02:57:59Z",
+          "completed_at": "2026-09-22T02:57:59Z"
+        }
+      ]
+    },
+    {
+      "name": "safe_outputs",
+      "status": "completed",
+      "conclusion": "skipped"
+    }
+  ],
+  "downloaded_files": [
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\.downloaded-artifacts\\all",
+      "size": 0,
+      "description": ""
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\agentic-workflow-usage-cache.jsonl",
+      "size": 140,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\aw_info.json",
+      "size": 824,
+      "description": "Engine configuration and workflow metadata"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\jobs.json",
+      "size": 11910,
+      "description": "JSON data file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\models.json",
+      "size": 15078,
+      "description": "JSON data file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\run_summary.json",
+      "size": 21246,
+      "description": "Cached summary of workflow run analysis"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\usage\\activity\\summary.json",
+      "size": 222,
+      "description": "JSON data file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\usage\\agent\\token_usage.jsonl",
+      "size": 0,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\usage\\detection\\token_usage.jsonl",
+      "size": 0,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\0_conclusion.txt",
+      "size": 48884,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\4_activation.txt",
+      "size": 24732,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\1_Set up job.txt",
+      "size": 2228,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\21_Upload activation artifact.txt",
+      "size": 3079,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\2_Setup Scripts.txt",
+      "size": 2611,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\3_Mask OTLP telemetry headers.txt",
+      "size": 1244,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\42_Post Setup Scripts.txt",
+      "size": 494,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\43_Complete job.txt",
+      "size": 804,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\4_Generate agentic run info.txt",
+      "size": 5508,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\5_Restore daily AIC usage cache.txt",
+      "size": 2166,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\6_Restore daily AIC usage cache (artifact fallback).txt",
+      "size": 2232,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\7_Check daily workflow token guardrail.txt",
+      "size": 2461,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\8_Validate COPILOT_GITHUB_TOKEN secret.txt",
+      "size": 1935,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\activation\\system.txt",
+      "size": 604,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\10_Write daily AIC usage cache entry.txt",
+      "size": 2391,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\11_Save daily AIC usage cache.txt",
+      "size": 1683,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\12_Upload daily AIC usage cache artifact.txt",
+      "size": 2576,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\13_Process no-op messages.txt",
+      "size": 2717,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\14_Log detection run.txt",
+      "size": 2650,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\15_Record missing tool.txt",
+      "size": 2158,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\16_Record incomplete.txt",
+      "size": 2176,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\17_Handle agent failure.txt",
+      "size": 8862,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\18_Report failed jobs.txt",
+      "size": 2715,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\1_Set up job.txt",
+      "size": 2229,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\2_Setup Scripts.txt",
+      "size": 2913,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\36_Post Setup Scripts.txt",
+      "size": 494,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\37_Complete job.txt",
+      "size": 119,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\3_Download agent output artifact.txt",
+      "size": 1759,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\4_Setup agent output environment variable.txt",
+      "size": 1480,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\5_Download detection artifact.txt",
+      "size": 1921,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\6_Download Safe Outputs Items Manifest.txt",
+      "size": 1737,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\7_Collect usage artifact files.txt",
+      "size": 3124,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\8_Upload usage artifact.txt",
+      "size": 3135,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\9_Restore daily AIC usage cache.txt",
+      "size": 2102,
+      "description": "Text file"
+    },
+    {
+      "path": "C:\\Users\\emanu\\Documents\\TAREAS UNIVERSIDAD\\TALLER GITHUB DAy\\agentic-workflows-workshop\\.github\\aw\\logs\\run-35681339763\\workflow-logs\\conclusion\\system.txt",
+      "size": 1208,
+      "description": "Text file"
+    }
+  ],
+  "errors": [
+    {
+      "type": "step_failure",
+      "message": "##[error]Process completed with exit code 1.",
+      "file": "activation"
+    },
+    {
+      "type": "step_failure",
+      "message": "##[error]Process completed with exit code 1.",
+      "file": "activation/Validate COPILOT_GITHUB_TOKEN secret"
+    },
+    {
+      "type": "step_failure",
+      "message": "##[error]Unable to download artifact(s): Artifact not found for name: detection",
+      "file": "conclusion/Download detection artifact"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "engine_id": "copilot",
+  "engine_name": "GitHub Copilot CLI",
+  "model": "auto",
+  "version": "1.0.80",
+  "agent_version": "1.0.80",
+  "workflow_name": "daily-digest",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 35681339763,
+  "run_number": 2,
+  "run_attempt": "1",
+  "repository": "TheCkasper/agentic-workflows-workshop",
+  "ref": "refs/heads/main",
+  "sha": "793c01c2d420152ea6b209e5b788d2f495f75442",
+  "actor": "TheCkasper",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.28.14",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-09-22T02:57:21.548Z",
+  "cli_version": "v0.88.8"
+}

@@ -1,0 +1,25 @@
+﻿2026-09-22T02:57:48.9408356Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-09-22T02:57:48.9409656Z with:
+2026-09-22T02:57:48.9410121Z   pattern: {agent,agent-output-fallback}
+2026-09-22T02:57:48.9410686Z   merge-multiple: true
+2026-09-22T02:57:48.9411132Z   path: /tmp/gh-aw/
+2026-09-22T02:57:48.9411656Z   repository: TheCkasper/agentic-workflows-workshop
+2026-09-22T02:57:48.9412261Z   run-id: 35681339763
+2026-09-22T02:57:48.9412707Z   skip-decompress: false
+2026-09-22T02:57:48.9413182Z   digest-mismatch: error
+2026-09-22T02:57:48.9413626Z env:
+2026-09-22T02:57:48.9414030Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:48.9414554Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:48.9415986Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:48.9417411Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:48.9417948Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:48.9418804Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:48.9419333Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:48.9419902Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:48.9420580Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ea45393a1cff0458
+2026-09-22T02:57:48.9421189Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045868910
+2026-09-22T02:57:48.9421722Z ##[endgroup]
+2026-09-22T02:57:49.3794245Z Found 1 artifact(s)
+2026-09-22T02:57:49.3801711Z Filtering artifacts by pattern '{agent,agent-output-fallback}'
+2026-09-22T02:57:49.3855582Z Total of 0 artifact(s) downloaded
+2026-09-22T02:57:49.3868301Z Download artifact has finished successfully

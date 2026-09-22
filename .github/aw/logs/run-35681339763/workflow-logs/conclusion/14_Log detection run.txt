@@ -1,0 +1,38 @@
+﻿2026-09-22T02:57:55.6054456Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-22T02:57:55.6055107Z with:
+2026-09-22T02:57:55.6058260Z   github-token: ***
+2026-09-22T02:57:55.6060198Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_detection_runs.cjs'));
+await main();
+
+2026-09-22T02:57:55.6067176Z   debug: false
+2026-09-22T02:57:55.6067619Z   user-agent: actions/github-script
+2026-09-22T02:57:55.6068118Z   result-encoding: json
+2026-09-22T02:57:55.6069428Z   retries: 0
+2026-09-22T02:57:55.6069850Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-22T02:57:55.6070307Z env:
+2026-09-22T02:57:55.6070662Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:55.6071096Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:55.6072197Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:55.6073858Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:55.6074313Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:55.6074778Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:55.6075181Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:55.6076556Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:55.6077123Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ea45393a1cff0458
+2026-09-22T02:57:55.6077611Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045868910
+2026-09-22T02:57:55.6078043Z   GH_AW_AGENT_OUTPUT: 
+2026-09-22T02:57:55.6078430Z   GH_AW_WORKFLOW_NAME: daily-digest
+2026-09-22T02:57:55.6079471Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/TheCkasper/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-22T02:57:55.6080496Z   GH_AW_RUN_URL: https://github.com/TheCkasper/agentic-workflows-workshop/actions/runs/35681339763
+2026-09-22T02:57:55.6081195Z   GH_AW_DETECTION_CONCLUSION: 
+2026-09-22T02:57:55.6081624Z   GH_AW_DETECTION_REASON: 
+2026-09-22T02:57:55.6082900Z ##[endgroup]
+2026-09-22T02:57:55.7622661Z Detection conclusion: 
+2026-09-22T02:57:55.7627846Z Detection reason: 
+2026-09-22T02:57:55.7631071Z Workflow name: daily-digest
+2026-09-22T02:57:55.7634032Z Run URL: https://github.com/TheCkasper/agentic-workflows-workshop/actions/runs/35681339763
+2026-09-22T02:57:55.7636961Z Detection conclusion is "", no issue comment needed

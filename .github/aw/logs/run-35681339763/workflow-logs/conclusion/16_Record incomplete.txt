@@ -1,0 +1,32 @@
+﻿2026-09-22T02:57:55.9277712Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-22T02:57:55.9278349Z with:
+2026-09-22T02:57:55.9286643Z   github-token: ***
+2026-09-22T02:57:55.9288298Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_incomplete_handler.cjs'));
+await main();
+
+2026-09-22T02:57:55.9290156Z   debug: false
+2026-09-22T02:57:55.9290528Z   user-agent: actions/github-script
+2026-09-22T02:57:55.9290949Z   result-encoding: json
+2026-09-22T02:57:55.9291306Z   retries: 0
+2026-09-22T02:57:55.9291690Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-22T02:57:55.9292135Z env:
+2026-09-22T02:57:55.9292470Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:55.9292878Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:55.9293908Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:55.9294986Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:55.9295421Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:55.9295887Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:55.9296290Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:55.9296735Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:55.9297258Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ea45393a1cff0458
+2026-09-22T02:57:55.9297735Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045868910
+2026-09-22T02:57:55.9298158Z   GH_AW_AGENT_OUTPUT: 
+2026-09-22T02:57:55.9298765Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-09-22T02:57:55.9299233Z   GH_AW_WORKFLOW_NAME: daily-digest
+2026-09-22T02:57:55.9300005Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/TheCkasper/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-22T02:57:55.9300787Z ##[endgroup]
+2026-09-22T02:57:56.0694652Z Max count: unlimited

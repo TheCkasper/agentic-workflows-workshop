@@ -1,0 +1,26 @@
+﻿2026-09-22T02:57:52.0912664Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-09-22T02:57:52.0913487Z with:
+2026-09-22T02:57:52.0913999Z   key: agentic-workflow-usage-dailydigest-35681339763
+2026-09-22T02:57:52.0914733Z   restore-keys: agentic-workflow-usage-dailydigest-
+2026-09-22T02:57:52.0915435Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-09-22T02:57:52.0916072Z   enableCrossOsArchive: false
+2026-09-22T02:57:52.0916582Z   fail-on-cache-miss: false
+2026-09-22T02:57:52.0917065Z   lookup-only: false
+2026-09-22T02:57:52.0917496Z env:
+2026-09-22T02:57:52.0917906Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:52.0918434Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:52.0920359Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:52.0921793Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:52.0922337Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:52.0922978Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:52.0923480Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:52.0924423Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:52.0925130Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ea45393a1cff0458
+2026-09-22T02:57:52.0925740Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045868910
+2026-09-22T02:57:52.0926288Z ##[endgroup]
+2026-09-22T02:57:52.4523277Z Cache hit for restore-key: agentic-workflow-usage-dailydigest-35680691825
+2026-09-22T02:57:52.9419346Z Received 274 of 274 (100.0%), 0.0 MBs/sec
+2026-09-22T02:57:52.9424727Z Cache Size: ~0 MB (274 B)
+2026-09-22T02:57:52.9450885Z [command]/usr/bin/tar -xf /home/runner/work/_temp/ec094844-ccff-4033-a3d7-e1ec7fa8c9fd/cache.tzst -P -C /home/runner/work/agentic-workflows-workshop/agentic-workflows-workshop --use-compress-program unzstd
+2026-09-22T02:57:52.9581830Z Cache restored successfully
+2026-09-22T02:57:52.9688041Z Cache restored from key: agentic-workflow-usage-dailydigest-35680691825

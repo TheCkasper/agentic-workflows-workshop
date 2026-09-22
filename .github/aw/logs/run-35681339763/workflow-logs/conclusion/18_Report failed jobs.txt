@@ -1,0 +1,38 @@
+﻿2026-09-22T02:57:58.0185550Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-22T02:57:58.0186232Z with:
+2026-09-22T02:57:58.0189701Z   github-token: ***
+2026-09-22T02:57:58.0191170Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_failed_jobs.cjs'));
+await main();
+
+2026-09-22T02:57:58.0192699Z   debug: false
+2026-09-22T02:57:58.0193052Z   user-agent: actions/github-script
+2026-09-22T02:57:58.0193460Z   result-encoding: json
+2026-09-22T02:57:58.0193808Z   retries: 0
+2026-09-22T02:57:58.0194170Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-22T02:57:58.0194598Z env:
+2026-09-22T02:57:58.0194918Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:58.0195330Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:58.0196355Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:58.0197406Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:58.0197840Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:58.0198287Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:58.0198868Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:58.0199315Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:58.0199832Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ea45393a1cff0458
+2026-09-22T02:57:58.0200291Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045868910
+2026-09-22T02:57:58.0200706Z   GH_AW_AGENT_OUTPUT: 
+2026-09-22T02:57:58.0201072Z   GH_AW_WORKFLOW_NAME: daily-digest
+2026-09-22T02:57:58.0201825Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/TheCkasper/agentic-workflows-workshop/blob/main/.github/workflows/daily-digest.md
+2026-09-22T02:57:58.0202794Z   GH_AW_RUN_URL: https://github.com/TheCkasper/agentic-workflows-workshop/actions/runs/35681339763
+2026-09-22T02:57:58.0203430Z   GH_AW_REPORT_FAILED_JOBS: true
+2026-09-22T02:57:58.0203807Z ##[endgroup]
+2026-09-22T02:57:58.1654033Z Checking GitHub API rate limit before querying jobs
+2026-09-22T02:57:58.5346757Z Querying jobs for workflow run 35681339763
+2026-09-22T02:57:58.8313579Z Page 1: retrieved 5 jobs
+2026-09-22T02:57:58.8327340Z Skipping builtin job: activation (already reported by agent failure handler)
+2026-09-22T02:57:58.8331504Z Checking GitHub API rate limit after querying jobs
+2026-09-22T02:57:59.0415929Z No failed non-builtin jobs found, skipping issue creation

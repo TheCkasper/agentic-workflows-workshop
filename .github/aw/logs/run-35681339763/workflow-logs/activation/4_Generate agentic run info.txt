@@ -1,0 +1,89 @@
+﻿2026-09-22T02:57:21.4023447Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-22T02:57:21.4025186Z with:
+2026-09-22T02:57:21.4030355Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_aw_info.cjs'));
+await main(core, context);
+
+2026-09-22T02:57:21.4044652Z   github-token: ***
+2026-09-22T02:57:21.4045654Z   debug: false
+2026-09-22T02:57:21.4046630Z   user-agent: actions/github-script
+2026-09-22T02:57:21.4048015Z   result-encoding: json
+2026-09-22T02:57:21.4049030Z   retries: 0
+2026-09-22T02:57:21.4050061Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-22T02:57:21.4051333Z env:
+2026-09-22T02:57:21.4052238Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:21.4053404Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:21.4056693Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:21.4060275Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:21.4061501Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:21.4062835Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:21.4063971Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-22T02:57:21.4065129Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:21.4066397Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:21.4068108Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 7bf8d1b98d4b1c19
+2026-09-22T02:57:21.4069483Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045841337
+2026-09-22T02:57:21.4070734Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-09-22T02:57:21.4071915Z   GH_AW_INFO_ENGINE_NAME: GitHub Copilot CLI
+2026-09-22T02:57:21.4073160Z   GH_AW_INFO_MODEL: auto
+2026-09-22T02:57:21.4074193Z   GH_AW_INFO_VERSION: 1.0.80
+2026-09-22T02:57:21.4075294Z   GH_AW_INFO_AGENT_VERSION: 1.0.80
+2026-09-22T02:57:21.4076471Z   GH_AW_INFO_CLI_VERSION: v0.88.8
+2026-09-22T02:57:21.4078119Z   GH_AW_INFO_WORKFLOW_NAME: daily-digest
+2026-09-22T02:57:21.4079370Z   GH_AW_INFO_EXPERIMENTAL: false
+2026-09-22T02:57:21.4080569Z   GH_AW_INFO_SUPPORTS_TOOLS_ALLOWLIST: true
+2026-09-22T02:57:21.4081834Z   GH_AW_INFO_STAGED: false
+2026-09-22T02:57:21.4082939Z   GH_AW_INFO_ALLOWED_DOMAINS: ["defaults"]
+2026-09-22T02:57:21.4084203Z   GH_AW_INFO_FIREWALL_ENABLED: true
+2026-09-22T02:57:21.4085571Z   GH_AW_INFO_AWF_VERSION: v0.28.14
+2026-09-22T02:57:21.4086740Z   GH_AW_INFO_AWMG_VERSION: 
+2026-09-22T02:57:21.4087978Z   GH_AW_INFO_FIREWALL_TYPE: squid
+2026-09-22T02:57:21.4089124Z   GH_AW_INFO_AGENT_RUNTIME: 
+2026-09-22T02:57:21.4090199Z   GH_AW_COMPILED_STRICT: true
+2026-09-22T02:57:21.4091641Z ##[endgroup]
+2026-09-22T02:57:21.5446098Z Starting context variable validation...
+2026-09-22T02:57:21.5454655Z ✓ github.event.repository.id is valid: 1380765525
+2026-09-22T02:57:21.5460645Z ✓ github.event.sender.id is valid: 171620272
+2026-09-22T02:57:21.5464514Z Validated 2 context variables
+2026-09-22T02:57:21.5468480Z ✅ All context variables validated successfully
+2026-09-22T02:57:21.5473793Z Lockdown mode not explicitly enabled, skipping validation
+2026-09-22T02:57:21.5478343Z Repository visibility: unknown
+2026-09-22T02:57:21.5480895Z Compiled with strict mode: true
+2026-09-22T02:57:21.5494075Z Generated merged models.json at: /tmp/gh-aw/models.json
+2026-09-22T02:57:21.5501857Z Generated aw_info.json at: /tmp/gh-aw/aw_info.json
+2026-09-22T02:57:21.5505826Z {
+2026-09-22T02:57:21.5546325Z   "engine_id": "copilot",
+2026-09-22T02:57:21.5547847Z   "engine_name": "GitHub Copilot CLI",
+2026-09-22T02:57:21.5549086Z   "model": "auto",
+2026-09-22T02:57:21.5550044Z   "version": "1.0.80",
+2026-09-22T02:57:21.5551064Z   "agent_version": "1.0.80",
+2026-09-22T02:57:21.5552197Z   "workflow_name": "daily-digest",
+2026-09-22T02:57:21.5553376Z   "experimental": false,
+2026-09-22T02:57:21.5554475Z   "supports_tools_allowlist": true,
+2026-09-22T02:57:21.5556027Z   "cache_memory": false,
+2026-09-22T02:57:21.5557076Z   "run_id": 35681339763,
+2026-09-22T02:57:21.5558273Z   "run_number": 2,
+2026-09-22T02:57:21.5559224Z   "run_attempt": "1",
+2026-09-22T02:57:21.5560435Z   "repository": "TheCkasper/agentic-workflows-workshop",
+2026-09-22T02:57:21.5561861Z   "ref": "refs/heads/main",
+2026-09-22T02:57:21.5563022Z   "sha": "793c01c2d420152ea6b209e5b788d2f495f75442",
+2026-09-22T02:57:21.5564453Z   "actor": "TheCkasper",
+2026-09-22T02:57:21.5565537Z   "event_name": "workflow_dispatch",
+2026-09-22T02:57:21.5566708Z   "target_repo": "",
+2026-09-22T02:57:21.5568401Z   "staged": false,
+2026-09-22T02:57:21.5569344Z   "allowed_domains": [
+2026-09-22T02:57:21.5570311Z     "defaults"
+2026-09-22T02:57:21.5571198Z   ],
+2026-09-22T02:57:21.5572077Z   "firewall_enabled": true,
+2026-09-22T02:57:21.5573149Z   "awf_version": "v0.28.14",
+2026-09-22T02:57:21.5574201Z   "awmg_version": "",
+2026-09-22T02:57:21.5575192Z   "agent_runtime": "",
+2026-09-22T02:57:21.5576185Z   "steps": {
+2026-09-22T02:57:21.5577082Z     "firewall": "squid"
+2026-09-22T02:57:21.5578272Z   },
+2026-09-22T02:57:21.5579171Z   "created_at": "2026-09-22T02:57:21.548Z",
+2026-09-22T02:57:21.5580382Z   "cli_version": "v0.88.8"
+2026-09-22T02:57:21.5581389Z }
+2026-09-22T02:57:21.5609310Z Generated workflow overview in step summary

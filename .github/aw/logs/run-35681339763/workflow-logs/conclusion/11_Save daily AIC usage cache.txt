@@ -1,0 +1,20 @@
+﻿2026-09-22T02:57:53.1657779Z ##[group]Run actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-09-22T02:57:53.1659814Z with:
+2026-09-22T02:57:53.1660961Z   key: agentic-workflow-usage-dailydigest-35681339763
+2026-09-22T02:57:53.1662586Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-09-22T02:57:53.1664041Z   enableCrossOsArchive: false
+2026-09-22T02:57:53.1665136Z env:
+2026-09-22T02:57:53.1666032Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:53.1667226Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:53.1670744Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:53.1674108Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:53.1675368Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:53.1676713Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:53.1677847Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:53.1679334Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:53.1680969Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ea45393a1cff0458
+2026-09-22T02:57:53.1682375Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045868910
+2026-09-22T02:57:53.1683606Z ##[endgroup]
+2026-09-22T02:57:53.3616117Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/agentic-workflows-workshop/agentic-workflows-workshop --files-from manifest.txt --use-compress-program zstdmt
+2026-09-22T02:57:53.8695560Z Sent 289 of 289 (100.0%), 0.0 MBs/sec
+2026-09-22T02:57:54.1294124Z Cache saved with key: agentic-workflow-usage-dailydigest-35681339763

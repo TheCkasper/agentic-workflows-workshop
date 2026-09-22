@@ -1,0 +1,46 @@
+﻿2026-09-22T02:57:22.5823290Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-22T02:57:22.5824914Z with:
+2026-09-22T02:57:22.5825933Z   name: activation
+2026-09-22T02:57:22.5826881Z   include-hidden-files: true
+2026-09-22T02:57:22.5833515Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.github/agents
+/tmp/gh-aw/.github/skills
+
+2026-09-22T02:57:22.5838206Z   if-no-files-found: ignore
+2026-09-22T02:57:22.5839202Z   retention-days: 1
+2026-09-22T02:57:22.5840112Z   compression-level: 6
+2026-09-22T02:57:22.5841047Z   overwrite: false
+2026-09-22T02:57:22.5842975Z   archive: true
+2026-09-22T02:57:22.5843838Z env:
+2026-09-22T02:57:22.5844689Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-22T02:57:22.5845769Z   OTEL_SERVICE_NAME: gh-aw.daily-digest
+2026-09-22T02:57:22.5848766Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=daily-digest,gh-aw.repository=TheCkasper/agentic-workflows-workshop,gh-aw.run.id=35681339763,github.run_id=35681339763,gh-aw.engine.id=copilot
+2026-09-22T02:57:22.5851767Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-22T02:57:22.5852887Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-22T02:57:22.5854098Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-22T02:57:22.5855144Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-22T02:57:22.5856199Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-22T02:57:22.5857505Z   GITHUB_AW_OTEL_TRACE_ID: d76058ff0ff6c703a83feb415023c4c1
+2026-09-22T02:57:22.5858861Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 7bf8d1b98d4b1c19
+2026-09-22T02:57:22.5860093Z   GITHUB_AW_OTEL_JOB_START_MS: 1790045841337
+2026-09-22T02:57:22.5861210Z ##[endgroup]
+2026-09-22T02:57:23.1413985Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-22T02:57:23.1421525Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-09-22T02:57:23.1423350Z With the provided path, there will be 2 files uploaded
+2026-09-22T02:57:23.1425271Z Artifact name is valid!
+2026-09-22T02:57:23.1426273Z Root directory input is valid!
+2026-09-22T02:57:23.1436010Z Uploading artifact: activation.zip
+2026-09-22T02:57:23.1438066Z Beginning upload of artifact content to blob storage
+2026-09-22T02:57:23.2029725Z Uploaded bytes 2037
+2026-09-22T02:57:23.2429917Z Finished uploading artifact content to blob storage!
+2026-09-22T02:57:23.2435233Z SHA256 digest of uploaded artifact is 35e952b8eeb0ea1cd4aeff6a8b09e8a2f012b2f3138673e7be03bfe4dbbb9556
+2026-09-22T02:57:23.2439319Z Finalizing artifact upload
+2026-09-22T02:57:23.5584770Z Artifact activation successfully finalized. Artifact ID 10674668912
+2026-09-22T02:57:23.5594520Z Artifact activation has been successfully uploaded! Final size is 2037 bytes. Artifact ID is 10674668912
+2026-09-22T02:57:23.5607083Z Artifact download URL: https://github.com/TheCkasper/agentic-workflows-workshop/actions/runs/35681339763/artifacts/10674668912
