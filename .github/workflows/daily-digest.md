@@ -14,10 +14,9 @@ permissions:
 # Network access
 network: defaults
 
-# Motor y modelo compatible
+# Motor configurado sin forzar modelo manual (para Copilot Student)
 engine:
   id: copilot
-  model: claude-3.5-sonnet
 
 # Outputs - what APIs and tools can the AI use?
 safe-outputs:
