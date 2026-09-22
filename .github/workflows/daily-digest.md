@@ -17,7 +17,7 @@ network: defaults
 # Motor y modelo compatible
 engine:
   id: copilot
-  model: o3-mini
+  model: claude-3.5-sonnet
 
 # Outputs - what APIs and tools can the AI use?
 safe-outputs:
